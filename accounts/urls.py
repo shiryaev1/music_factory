@@ -11,3 +11,4 @@ urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
     path('logout/', django_auth_views.logout_then_login, name='logout'),
 ]
+
