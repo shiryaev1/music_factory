@@ -126,11 +126,3 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = 'accounts:login'
-
-# EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.yandex.by'
-EMAIL_PORT = 465
-EMAIL_HOST_USER = "shiryaevv1@yandex.by"
-EMAIL_HOST_PASSWORD = "kachalka2017"
-EMAIL_USE_SSL = True
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
