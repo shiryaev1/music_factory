@@ -25,7 +25,7 @@
                     <td>{{track.genre.name}}</td>
                     <td>
                         <audio controls>
-                            <source src="{% static 'media/upload_tracks/HammAli__Navai_-_Девочка-война.mp3' %}" type="audio/mp3"/>
+                            <source src="{{ track.music.url }}" type="audio/mp3"/>
                         </audio>
                     </td>
                 </tr>
