@@ -6,7 +6,13 @@
     <title>Title</title>
 </head>
 <body>
-    <div class="container">
+   <div class="container">
+        <form action="" method="GET">
+            {{ filter.form }}
+            <button type="submit">
+                Search
+            </button>
+        </form>
         <table>
             <thead>
                 <tr>
@@ -18,7 +24,7 @@
             </thead>
 
             <tbody>
-                {% for track in tracks %}
+                {% for track in filter.qs %}
                 <tr>
                     <td>{{track.title}}
                     <td>{{track.singer.nickname}}</td>
